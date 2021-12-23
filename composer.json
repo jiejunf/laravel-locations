@@ -1,0 +1,29 @@
+{
+    "name": "jiejunf/laravel-locations",
+    "description": "combine pharaonic/laravel-locations with components/flag-icon-css",
+    "type": "library",
+    "require": {
+        "pharaonic/laravel-locations": "^1.0",
+        "components/flag-icon-css": "^3.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jiejunf\\LaravelLocations\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jiejunf",
+            "email": "jiejunwork@foxmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jiejunf\\LaravelLocations\\LocationProvider"
+            ]
+        }
+    }
+}
