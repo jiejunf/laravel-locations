@@ -1,6 +1,6 @@
 {
     "name": "jiejunf/laravel-locations",
-    "description": "combine pharaonic/laravel-locations with components/flag-icon-css",
+    "description": "location data, flag and api for laravel.",
     "type": "library",
     "require": {
         "pharaonic/laravel-locations": "^1.0",
