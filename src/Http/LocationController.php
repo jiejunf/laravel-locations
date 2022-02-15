@@ -28,8 +28,11 @@ class LocationController extends Controller
             $countries = $countries->forPage($request->get('page'), $request->get('per_page', 30));
         }
 
-        $resourceClass = config('locations.api_resources.country');
-        return class_exists($resourceClass) ? $resourceClass::collection($countries) : $countries;
+        try {
+            return config('locations.api_resources.country')::collection($countries);
+        } catch (\Exception $e) {
+            return $countries;
+        }
     }
 
 }
